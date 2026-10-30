@@ -8,7 +8,7 @@ body {
     margin: 0;
     min-height: 100vh;
 
-    background-image: url("img/98414393ab6ad58bcc18d06b2d28aa35.jpg");
+    background-image: url("https://i.pinimg.com/736x/98/41/43/98414393ab6ad58bcc18d06b2d28aa35.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ body::before {
     inset: 0;
 
     
-    background-image:   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("img/fa67aebf0cac9abccdc63d659cf08451.jpg");
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://i.pinimg.com/736x/fa/67/ae/fa67aebf0cac9abccdc63d659cf08451.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
