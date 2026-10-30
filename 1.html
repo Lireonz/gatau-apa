@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Undangan</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const tombol = document.getElementById("btnBuka");
+    const halamanAwal = document.getElementById("halamanAwal");
+    const halamanKedua = document.getElementById("halamanKedua");
+
+    tombol.addEventListener("click", function() {
+
+        halamanAwal.classList.add("hidden");
+
+        halamanKedua.classList.add("active");
+
+    });
+
+});
+</script>
+<body>
+    <div class="container">
+
+    <!-- HALAMAN PERTAMA -->
+    <div class="container">
+
+    <div class="content" id="halamanAwal">
+        <h1>🎂SELAMAT ULANG TAHUN SAYANG🎂</h1>
+        <p>Maaf ini aku buat dadakan dan terlihat jelek😅</p>
+
+        <button class="tombol" id="btnBuka">
+            Buka Sekarang
+        </button>
+    </div>
+
+    <div class="content halaman-kedua" id="halamanKedua">
+        <h1>❤️Happy Birthday, sayangku! ❤️</h1>
+        <p class="pq1">Selamat bertambah usia untuk seseorang yang begitu berarti dalam hidupku. Aku berharap di usia barumu ini, semua hal baik selalu datang menghampirimu. Semoga kamu selalu diberikan kesehatan, kebahagiaan, kelancaran dalam setiap urusan, dan dimudahkan dalam meraih semua impianmu.</p>
+        <p class="pq2">Terima kasih sudah hadir dalam hidupku dan menjadi salah satu alasan di balik banyaknya senyum yang aku punya. Maaf kalau selama ini aku masih belum bisa menjadi pasangan yang sempurna, masih banyak kurangnya, dan terkadang tanpa sadar membuatmu kecewa.</p>
+        <p class="pq3">Aku mungkin tidak bisa menjanjikan bahwa semuanya akan selalu mudah, tetapi aku ingin terus belajar menjadi seseorang yang bisa kamu andalkan, tempat kamu bercerita, bersandar, dan merasa aman.</p>
+        <p class="pq4">Semoga di antara banyaknya hal yang berubah seiring berjalannya waktu, kita tetap menjadi dua orang yang saling memilih dan memperjuangkan satu sama lain.</p>
+        <p class="pq5">Sekali lagi, selamat ulang tahun, cintaku. Jangan pernah lupa bahwa kamu begitu berharga dan pantas mendapatkan segala kebahagiaan di dunia ini.</p>
+        <p class="pq6">I love you, today, tomorrow, and hopefully for all the days to come. ❤️</p>
+        <p class="pq7">Dari Pacarmu 〜✩Reyhan✩〜</p>
+    </div>
+
+</div>
+
+<script src="1.js"></script>
+</body>
+</html>

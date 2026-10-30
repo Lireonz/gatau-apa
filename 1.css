@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("img/98414393ab6ad58bcc18d06b2d28aa35.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+/* Lapisan background kedua */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("img/fa67aebf0cac9abccdc63d659cf08451.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    transition: opacity 1.5s ease;
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Ketika tombol ditekan */
+body.bg-kedua::before {
+    opacity: 1;
+}
+
+/* Memastikan tulisan berada di atas background */
+.container {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Menyembunyikan halaman pertama */
+.hidden {
+    display: none !important;
+}
+
+/* Halaman kedua */
+.halaman-kedua {
+    display: none;
+}
+
+.halaman-kedua.active {
+    display: flex;
+    animation: fadeIn 2s ease forwards;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom:10px;
+}
+
+.content p {
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.judul {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+.deskripsi {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 25px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.tombol {
+    padding: 15px 35px;
+    font-size: 16px;
+    color: white;
+    background-color: #b38b1e;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 1s;
+}
+
+.halaman-kedua {
+    display: none;
+    opacity: 0;
+}
+
+.halaman-kedua h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.halaman-kedua p  {
+    color: white;
+    max-width: 500px;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+
+.pq1{
+     margin-top: 60px;  
+}
+.pq2{
+    margin-top: 30px;
+}
+.pq3{
+    margin-top: 30px;
+}
+.pq4{
+    margin-top: 30px;
+}
+.pq5{
+    margin-top: 30px;
+}
+.pq6{
+     margin-top: 20px;
+}
+.pq7{
+    font-size: 30px;
+     margin-top: 10px;
+}
+
+
+.halaman-kedua.active {
+    display: flex;
+    animation: fadeIn 2s ease forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.halaman-kedua {
+    display: none;
+}
+
+.halaman-kedua.active {
+    display: flex;
+    animation: fadeIn 2s ease forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease forwards;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
